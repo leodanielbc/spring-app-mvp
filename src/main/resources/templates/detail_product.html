@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xlmns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Product</title>
+    <title th:text="${Title}">Detail Product</title>
 </head>
 <body>
-    <h1>Products</h1>
+    <h1 th:text="${Title}"></h1>
+    <h2 th:text="${Product}"></h2>
+    <h2 th:text="${Description}"></h2>
 </body>
 </html>
